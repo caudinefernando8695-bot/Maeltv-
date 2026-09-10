@@ -1,0 +1,161 @@
+<!doctype html>
+<html lang="pt">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>MaelTV — filmes, séries e TV grátis</title>
+  <meta name="description" content="MaelTV: uma experiência de streaming gratuita, leve e pensada para telemóvel, com catálogo legal e canais oficiais.">
+  <link rel="icon" type="image/png" href="/favicon.png">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="MaelTV — filmes, séries e TV grátis">
+  <meta property="og:description" content="Filmes clássicos, programação oficial e uma experiência de streaming feita para telemóvel.">
+  <meta property="og:image" content="__ZAPIA_SITE_ORIGIN__/_z/og.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:image" content="__ZAPIA_SITE_ORIGIN__/_z/og.png">
+  <meta name="theme-color" content="#b00020">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="apple-mobile-web-app-title" content="MaelTV">
+  <link rel="manifest" href="__ZAPIA_SITE_URL__/manifest.webmanifest">
+  <link rel="apple-touch-icon" href="__ZAPIA_SITE_URL__/apple-touch-icon.png">
+  <style>
+    .searchbar input{flex:1;min-width:0;border:0;outline:0;background:transparent;color:var(--text);font:inherit;font-size:.9rem}.searchbar input::placeholder{color:var(--muted)}.api-status{font-size:.68rem;color:var(--accent);font-weight:900;white-space:nowrap}.fav-btn{border:1px solid var(--line);background:transparent;color:var(--accent);border-radius:8px;padding:5px 8px;cursor:pointer;font-size:.75rem}.result-empty{grid-column:1/-1;padding:25px;border:1px dashed var(--line);border-radius:14px;color:var(--muted);text-align:center}
+    :root{--bg:#080808;--panel:#141414;--panel2:#1c1c1c;--text:#f5f5f7;--muted:#a3a3a3;--line:#2b2b2b;--accent:#e5092f;--accent2:#7a0018;--green:#ff3658}
+    *{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:radial-gradient(circle at 90% -5%,#3b0814 0,transparent 33%),var(--bg);color:var(--text);font-family:Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;line-height:1.45}a{color:inherit;text-decoration:none}.wrap{width:min(1160px,calc(100% - 36px));margin:auto}.topbar{height:72px;display:flex;align-items:center;justify-content:space-between;gap:22px;border-bottom:1px solid rgba(255,255,255,.08)}.brand{display:flex;align-items:center;gap:10px;font-weight:900;letter-spacing:-.04em;font-size:1.25rem}.brand-mark{width:30px;height:30px;border-radius:10px;background:linear-gradient(135deg,var(--accent),var(--accent2));display:grid;place-items:center;color:#17131a;font-size:14px;box-shadow:0 8px 24px rgba(255,122,69,.24)}.nav{display:flex;gap:22px;color:var(--muted);font-size:.9rem}.nav a:hover{color:var(--text)}.account{border:1px solid var(--line);padding:9px 13px;border-radius:99px;color:var(--muted);font-size:.85rem}.hero{min-height:440px;display:grid;align-items:center;grid-template-columns:1.15fr .85fr;gap:40px;padding:64px 0 44px}.eyebrow{display:inline-flex;gap:8px;align-items:center;color:var(--green);font-size:.76rem;text-transform:uppercase;letter-spacing:.13em;font-weight:800}.eyebrow:before{content:"";display:block;width:7px;height:7px;border-radius:50%;background:var(--green);box-shadow:0 0 0 5px rgba(105,230,166,.12)}h1{font-size:clamp(2.5rem,6vw,5.6rem);line-height:.94;letter-spacing:-.075em;margin:17px 0 20px;max-width:700px}h1 span{color:var(--accent)}.hero p{color:var(--muted);font-size:1.08rem;max-width:570px;margin:0 0 28px}.actions{display:flex;gap:12px;flex-wrap:wrap}.btn{display:inline-flex;align-items:center;justify-content:center;gap:9px;padding:12px 17px;border-radius:12px;font-weight:800;font-size:.92rem;transition:transform .2s,background .2s}.btn:hover{transform:translateY(-2px)}.primary{background:var(--accent);color:#18131a}.secondary{background:var(--panel2);border:1px solid var(--line);color:var(--text)}.searchbar{display:flex;align-items:center;gap:11px;margin:10px 0 20px;padding:14px 16px;border:1px solid var(--line);border-radius:13px;background:#111;color:var(--muted)}.search-icon{font-size:1.35rem;color:var(--accent);line-height:1}.search-placeholder{flex:1;font-size:.9rem}.searchbar a{color:var(--accent);font-size:.78rem;font-weight:800}.category-section{padding:10px 0 24px}.chips{display:flex;gap:9px;flex-wrap:wrap}.chip{padding:9px 13px;border:1px solid var(--line);border-radius:99px;background:var(--panel);color:var(--muted);font-size:.78rem}.chip:hover,.chip.active{background:var(--accent);border-color:var(--accent);color:#fff}.player-section{display:grid;grid-template-columns:.78fr 1.22fr;gap:24px;align-items:center;margin:26px 0 22px;padding:24px;border:1px solid rgba(255,255,255,.1);border-radius:22px;background:linear-gradient(135deg,rgba(229,9,47,.12),rgba(122,0,24,.06) 45%,var(--panel) 100%)}.player-copy h2{font-size:clamp(1.7rem,3vw,2.6rem);letter-spacing:-.06em;line-height:1;margin:14px 0}.player-copy p{color:var(--muted);font-size:.9rem;max-width:360px;margin:0}.player-meta{display:flex;gap:8px;flex-wrap:wrap;margin-top:18px}.player-meta span{font-size:.7rem;color:#dcdce5;border:1px solid var(--line);border-radius:99px;padding:6px 8px}.player-box{overflow:hidden;border:1px solid rgba(255,255,255,.13);border-radius:15px;background:#050509}.player-box video{display:block;width:100%;aspect-ratio:16/9;background:#050509}.now-playing{display:flex;justify-content:space-between;align-items:center;gap:12px;padding:12px 14px;font-size:.8rem;color:var(--muted)}.now-playing b{color:var(--text)}.now-playing a{color:var(--accent);font-weight:800;white-space:nowrap}.hero-art{position:relative;min-height:320px;border:1px solid rgba(255,255,255,.08);border-radius:28px;overflow:hidden;background:linear-gradient(145deg,#442557 0%,#1a1832 48%,#10101a 100%);box-shadow:0 30px 70px rgba(0,0,0,.4)}.hero-art:before,.hero-art:after{content:"";position:absolute;border-radius:50%;filter:blur(2px)}.hero-art:before{width:260px;height:260px;right:-55px;top:-70px;background:linear-gradient(135deg,rgba(255,202,40,.85),rgba(255,122,69,.15))}.hero-art:after{width:180px;height:180px;left:-60px;bottom:-60px;background:rgba(105,230,166,.32)}.screen{position:absolute;inset:34px;display:flex;flex-direction:column;justify-content:flex-end;padding:24px;border:1px solid rgba(255,255,255,.13);border-radius:18px;background:linear-gradient(180deg,transparent 8%,rgba(5,5,10,.9) 78%),linear-gradient(135deg,#5b396e,#211e3b 54%,#11111b);z-index:1}.screen small{color:var(--accent);font-weight:800;letter-spacing:.1em;text-transform:uppercase}.screen strong{font-size:2.1rem;letter-spacing:-.06em;line-height:1;margin:8px 0}.screen p{font-size:.82rem;margin:0;color:#c8c8d1}.section{padding:36px 0}.section-head{display:flex;justify-content:space-between;align-items:end;gap:20px;margin-bottom:17px}.section h2{font-size:1.55rem;letter-spacing:-.04em;margin:0}.section-head p{color:var(--muted);font-size:.85rem;margin:0}.cards{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}.card{background:var(--panel);border:1px solid rgba(255,255,255,.07);border-radius:16px;overflow:hidden;min-width:0}.poster{height:190px;display:flex;align-items:flex-end;padding:14px;position:relative;overflow:hidden}.poster:after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,transparent 25%,rgba(0,0,0,.72))}.poster strong,.poster span{position:relative;z-index:1}.poster strong{font-size:1.2rem;letter-spacing:-.05em;line-height:1.02;max-width:90%}.poster span{position:absolute;right:12px;top:12px;z-index:1;background:rgba(0,0,0,.4);border:1px solid rgba(255,255,255,.18);border-radius:99px;padding:4px 7px;font-size:.66rem}.p1{background:linear-gradient(145deg,#2d5770,#152333 55%,#05070c)}.p2{background:linear-gradient(145deg,#862f40,#272032 60%,#0e0d16)}.p3{background:linear-gradient(145deg,#b36b2f,#493424 48%,#111219)}.p4{background:linear-gradient(145deg,#28556b,#24223e 50%,#0e0f1a)}.p5{background:linear-gradient(145deg,#5d358b,#282044 53%,#0e0e17)}.p6{background:linear-gradient(145deg,#b34f38,#302031 54%,#0e0e17)}.p7{background:linear-gradient(145deg,#1f755f,#172b35 52%,#0b1015)}.p8{background:linear-gradient(145deg,#6c4b28,#252130 54%,#0d0d14)}.card-body{padding:12px 14px 14px}.meta{font-size:.74rem;color:var(--muted);margin-bottom:10px}.watch{font-size:.78rem;color:var(--accent);font-weight:800}.rail{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}.channel{padding:18px;border-radius:16px;background:linear-gradient(135deg,var(--panel2),var(--panel));border:1px solid var(--line);display:flex;align-items:center;gap:14px}.channel-icon{width:50px;height:50px;flex:0 0 50px;border-radius:15px;display:grid;place-items:center;font-weight:900;font-size:.8rem;background:linear-gradient(135deg,var(--accent),var(--accent2));color:#20151a}.channel:nth-child(2) .channel-icon{background:linear-gradient(135deg,#70e1f5,#ffd194)}.channel:nth-child(3) .channel-icon{background:linear-gradient(135deg,#a8ff78,#78ffd6)}.channel h3{font-size:.95rem;margin:0 0 3px}.channel p{font-size:.76rem;color:var(--muted);margin:0}.guest-card{display:flex;align-items:center;gap:14px;margin:18px 0;padding:17px 18px;border-radius:16px;background:linear-gradient(90deg,#1b0b0f,#151515);border:1px solid #4a1822}.guest-avatar{width:42px;height:42px;display:grid;place-items:center;border-radius:13px;background:var(--accent);font-size:1.15rem}.guest-card h3{margin:0 0 3px;font-size:.95rem}.guest-card p{margin:0;color:var(--muted);font-size:.78rem}.guest-status{margin-left:auto;color:#ff5872;font-size:.68rem;font-weight:900;letter-spacing:.12em}.legal{margin:35px 0 18px;padding:18px 20px;border-radius:15px;background:rgba(229,9,47,.07);border:1px solid rgba(229,9,47,.24);color:#f0cbd2;font-size:.82rem}.legal b{color:#ff5872}.footer{border-top:1px solid var(--line);margin-top:40px;padding:28px 0 60px;color:var(--muted);font-size:.8rem;display:flex;justify-content:space-between;gap:20px}.footer a{color:var(--text)}details{background:var(--panel);border:1px solid var(--line);border-radius:14px;padding:14px 16px;margin-top:16px;color:var(--muted);font-size:.85rem}summary{cursor:pointer;color:var(--text);font-weight:800} @media(max-width:800px){.nav{display:none}.hero{grid-template-columns:1fr;padding-top:45px}.hero-art{min-height:250px}.player-section{grid-template-columns:1fr;padding:18px}.player-copy p{max-width:none}.cards{grid-template-columns:repeat(2,1fr)}.rail{grid-template-columns:1fr}.footer{flex-direction:column}}@media(max-width:430px){.wrap{width:min(100% - 24px,1160px)}.topbar{height:62px}.account{display:none}h1{font-size:3.1rem}.poster{height:165px}.cards{gap:10px}.card-body{padding:10px}.hero-art{min-height:220px}.screen{inset:20px;padding:18px}.screen strong{font-size:1.65rem}}
+  </style>
+</head>
+<body>
+  <header class="wrap topbar">
+    <a class="brand" href="#inicio"><span class="brand-mark">MTv</span> MaelTV</a>
+    <nav class="nav" aria-label="Navegação"><a href="#catalogo">Catálogo</a><a href="#categorias">Categorias</a><a href="#series">Séries</a><a href="#tv">TV ao vivo</a></nav>
+    <a class="account" href="#convidado">👤 Convidado</a>
+  </header>
+
+  <main id="inicio" class="wrap">
+    <section class="hero">
+      <div>
+        <div class="eyebrow">Streaming leve para Moçambique</div>
+        <h1>O teu ecrã.<br><span>Do teu jeito.</span></h1>
+        <p>Uma experiência simples para descobrir filmes, séries e canais oficiais — feita para funcionar bem no telemóvel e consumir poucos dados.</p>
+        <div class="actions"><a class="btn primary" href="#filmes">Explorar catálogo <span>↓</span></a><a class="btn secondary" href="#tv">Ver TV ao vivo</a></div>
+      </div>
+      <div class="hero-art" aria-label="Destaque MaelTV"><div class="screen"><small>Agora em destaque</small><strong>Clássicos que ficam.</strong><p>Conteúdos gratuitos e fontes oficiais num só lugar.</p></div></div>
+    </section>
+
+    <div class="searchbar" role="search"><span class="search-icon">⌕</span><input id="searchInput" type="search" placeholder="Pesquisar filmes, séries, canais e programas" aria-label="Pesquisar no catálogo"><span id="apiStatus" class="api-status">A ligar…</span></div>
+
+    <section id="categorias" class="category-section">
+      <div class="section-head"><div><h2>Explora por categoria</h2><p>Atalhos rápidos para o catálogo MaelTV</p></div></div>
+      <div class="chips"><a class="chip active" href="#catalogo">Todos</a><a class="chip" href="#filmes">Ação</a><a class="chip" href="#filmes">Drama</a><a class="chip" href="#filmes">Comédia</a><a class="chip" href="#series">Novelas</a><a class="chip" href="#series">Infantil</a><a class="chip" href="#filmes">Terror</a><a class="chip" href="#filmes">Documentários</a><a class="chip" href="#tv">Notícias</a><a class="chip" href="#tv">Desporto</a><a class="chip" href="#tv">Música</a><a class="chip" href="#tv">Canais</a></div>
+    </section>
+
+    <section id="player" class="player-section">
+      <div class="player-copy"><div class="eyebrow">Player MaelTV</div><h2>Assiste aqui, sem sair do app.</h2><p>Player HTML5 integrado para conteúdos hospedados em fontes autorizadas. Nesta demonstração, o filme é apresentado a partir de um arquivo público do Internet Archive.</p><div class="player-meta"><span>▶ Reprodução no navegador</span><span>◷ Controles nativos</span><span>✓ Fonte legal</span></div></div>
+      <div class="player-box"><video controls playsinline preload="metadata"><source src="https://archive.org/download/the-brain-from-planet-arous-1957-sci-fi-feature/arous_drivein_v2_704x430_rf20.ia.mp4" type="video/mp4"><p>O teu navegador não suporta vídeo HTML5. <a href="https://archive.org/details/the-brain-from-planet-arous-1957-sci-fi-feature">Abrir fonte oficial</a>.</p></video><div class="now-playing"><span><b>Agora a tocar</b><br> The Brain from Planet Arous · 1957</span><a href="https://archive.org/details/the-brain-from-planet-arous-1957-sci-fi-feature">Detalhes →</a></div></div>
+    </section>
+
+    <span id="catalogo"></span><section id="filmes" class="section">
+      <div class="section-head"><div><h2>Filmes para começar</h2><p>Seleção de demonstração com fontes gratuitas e legais</p></div><a class="watch" href="https://archive.org/details/moviesandfilms">Ver coleção completa →</a></div>
+      <div class="cards">
+        <article class="card"><div class="poster p1"><span>CLÁSSICO</span><strong>Aventura &amp; mistério</strong></div><div class="card-body"><div class="meta">Longa-metragem · Domínio público</div><a class="watch" href="https://archive.org/details/moviesandfilms">Abrir fonte legal →</a></div></article>
+        <article class="card"><div class="poster p2"><span>DRAMA</span><strong>Histórias que marcam</strong></div><div class="card-body"><div class="meta">Cinema clássico · Gratuito</div><a class="watch" href="https://archive.org/details/publicmovies212">Ver seleção →</a></div></article>
+        <article class="card"><div class="poster p3"><span>SCI-FI</span><strong>O futuro começou ontem</strong></div><div class="card-body"><div class="meta">Ficção científica · 1957</div><a class="watch" href="https://archive.org/details/the-brain-from-planet-arous-1957-sci-fi-feature">Abrir filme →</a></div></article>
+        <article class="card"><div class="poster p4"><span>DOC</span><strong>O mundo em foco</strong></div><div class="card-body"><div class="meta">Documentários · Arquivo aberto</div><a class="watch" href="https://archive.org/details/movies">Explorar arquivo →</a></div></article>
+      </div>
+    </section>
+
+    <section id="series" class="section">
+      <div class="section-head"><div><h2>Séries e coleções</h2><p>Escolhe um tema e continua a tua descoberta</p></div></div>
+      <div class="cards">
+        <article class="card"><div class="poster p5"><span>EPISÓDIOS</span><strong>Arquivo de aventura</strong></div><div class="card-body"><div class="meta">Temporadas clássicas</div><a class="watch" href="https://archive.org/details/movies">Explorar episódios →</a></div></article>
+        <article class="card"><div class="poster p6"><span>CULTURA</span><strong>Vidas e lugares</strong></div><div class="card-body"><div class="meta">Série documental</div><a class="watch" href="https://archive.org/details/moviesandfilms">Ver coleção →</a></div></article>
+        <article class="card"><div class="poster p7"><span>FAMÍLIA</span><strong>Para ver juntos</strong></div><div class="card-body"><div class="meta">Conteúdos selecionados</div><a class="watch" href="https://archive.org/details/publicmovies212">Abrir seleção →</a></div></article>
+        <article class="card"><div class="poster p8"><span>CLÁSSICOS</span><strong>Uma viagem no tempo</strong></div><div class="card-body"><div class="meta">Cinema de arquivo</div><a class="watch" href="https://archive.org/details/movies">Ver agora →</a></div></article>
+      </div>
+    </section>
+
+    <section id="tv" class="section">
+      <div class="section-head"><div><h2>TV ao vivo</h2><p>Canais com presença e transmissão oficial online</p></div></div>
+      <div class="rail">
+        <a class="channel" href="https://www.youtube.com/@TVMiramar"><span class="channel-icon">MIR</span><span><h3>TV Miramar</h3><p>Notícias e entretenimento · Canal oficial</p></span></a>
+        <a class="channel" href="https://miramar.co.mz/"><span class="channel-icon">TV</span><span><h3>Miramar online</h3><p>Programação e conteúdos oficiais</p></span></a>
+        <a class="channel" href="https://archive.org/details/movies"><span class="channel-icon">▶</span><span><h3>Arquivo aberto</h3><p>Vídeos e cinema para ver gratuitamente</p></span></a>
+      </div>
+    </section>
+
+    <section id="convidado" class="guest-card"><div class="guest-avatar">👤</div><div><h3>A navegar como convidado</h3><p>Sem palavra-passe e sem cartão. O modo convidado permite explorar o catálogo e abrir os conteúdos disponíveis.</p></div><span class="guest-status" id="guestStatus">A LIGAR</span></section>
+    <div class="legal"><b>Importante:</b> este é um protótipo independente e não é afiliado à Movitel, MovTV, TVM ou TVMovo. A MaelTV só deve publicar conteúdos com autorização, licença, domínio público ou links para as páginas oficiais dos detentores.</div>
+    <section id="sobre" class="section">
+      <div class="section-head"><div><h2>Feito para crescer</h2><p>Uma base pronta para receber o teu catálogo autorizado.</p></div></div>
+      <details><summary>O que já funciona nesta versão?</summary><p>Navegação por secções, layout responsivo para telemóvel, catálogo organizado, cartões de conteúdo e abertura de fontes oficiais ou gratuitas. Não há contas, pagamentos nem recolha de dados.</p></details>
+      <details><summary>Como transformar em serviço completo?</summary><p>Adicionar um backend, autenticação, pesquisa, favoritos, controlo parental, player e um catálogo de parceiros que forneçam licenças de distribuição. Também é possível trocar o conteúdo de demonstração pelos teus próprios links autorizados.</p></details>
+    </section>
+  </main>
+  <footer class="wrap footer"><span>© 2026 MaelTV · protótipo gratuito</span><span><a href="#inicio">Voltar ao topo ↑</a></span></footer>
+<script>
+const API = 'https://maeltv-api.onrender.com';
+let guestToken = '';
+const $ = (selector) => document.querySelector(selector);
+const esc = (value) => String(value ?? '').replace(/[&<>'"]/g, (char) => ({'&':'&amp;','<':'&lt;','>':'&gt;',"'":'&#39;','"':'&quot;'}[char]));
+const posterClasses = ['p1','p2','p3','p4','p5','p6','p7','p8'];
+
+function drawCatalog(items) {
+  const rail = $('#filmes .cards');
+  if (!rail) return;
+  if (!items.length) {
+    rail.innerHTML = '<div class="result-empty">Não encontramos conteúdos com essa pesquisa.</div>';
+    return;
+  }
+  rail.innerHTML = items.map((item, index) => {
+    const target = item.video_url ? '#player' : item.source_url;
+    const playClass = item.video_url ? 'play-in-player' : '';
+    const playText = item.video_url ? 'Reproduzir →' : 'Abrir fonte →';
+    return `<article class="card"><div class="poster ${posterClasses[index % posterClasses.length]}"><span>${esc(item.category)}</span><strong>${esc(item.title)}</strong></div><div class="card-body"><div class="meta">${esc(item.type)} · ${esc(item.year || 'MaelTV')}</div><a class="watch ${playClass}" href="${esc(target)}" data-video="${esc(item.video_url || '')}" data-title="${esc(item.title)}">${playText}</a> <button class="fav-btn" data-id="${esc(item.id)}" aria-label="Adicionar aos favoritos">♡</button></div></article>`;
+  }).join('');
+  rail.querySelectorAll('.play-in-player').forEach((link) => link.addEventListener('click', (event) => {
+    event.preventDefault();
+    const video = $('#mainPlayer');
+    if (!video) return;
+    video.querySelector('source').src = link.dataset.video;
+    video.load();
+    video.play().catch(() => {});
+    const title = $('.now-playing b');
+    if (title) title.textContent = link.dataset.title;
+    location.hash = 'player';
+  }));
+  rail.querySelectorAll('.fav-btn').forEach((button) => button.addEventListener('click', async () => {
+    if (!guestToken) return;
+    const response = await fetch(`${API}/api/favorites`, {method:'POST', headers:{'Content-Type':'application/json','Authorization':`Bearer ${guestToken}`}, body:JSON.stringify({catalog_id:Number(button.dataset.id)})});
+    if (response.ok) button.textContent = (await response.json()).favorite ? '♥' : '♡';
+  }));
+}
+
+async function loadCatalog(query = '') {
+  const response = await fetch(`${API}/api/catalog?q=${encodeURIComponent(query)}`, {headers: guestToken ? {Authorization:`Bearer ${guestToken}`} : {}});
+  const data = await response.json();
+  drawCatalog(data.items || []);
+}
+
+async function startMaelTV() {
+  try {
+    const response = await fetch(`${API}/api/auth/guest`, {method:'POST'});
+    const data = await response.json();
+    guestToken = data.token;
+    if ($('#guestStatus')) $('#guestStatus').textContent = 'ONLINE';
+    if ($('#apiStatus')) $('#apiStatus').textContent = 'Ligado';
+    await loadCatalog();
+  } catch (error) {
+    if ($('#guestStatus')) $('#guestStatus').textContent = 'OFFLINE';
+    if ($('#apiStatus')) $('#apiStatus').textContent = 'Sem ligação';
+  }
+}
+
+let timer;
+$('#searchInput')?.addEventListener('input', (event) => {
+  clearTimeout(timer);
+  timer = setTimeout(() => loadCatalog(event.target.value), 250);
+});
+startMaelTV();
+</script>
+</body>
+</html>
